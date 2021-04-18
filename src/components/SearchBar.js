@@ -95,11 +95,10 @@ const SearchBar = ({onSubmit}) => {
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
-            <form>
+            <form onSubmit={onFormSubmit}>
               <InputBase                                                 //お店情報を入力する部分
                 placeholder="お店を探す"
-                type="text"　　　　　　　　　　　　　　　　　　　　　　　　　　　//テキストのみ入力可能　　
-                onSubmit={onFormSubmit}　　　　　　　　　　　　　　　　　　　　　　　
+                type="text"　　　　　　　　　　　　　　　　　　　　　　　　　　　//テキストのみ入力可能　　　　　　　　　　　　　　　　　　　　　　
                 classes={{
                   root: classes.inputRoot,
                   input: classes.inputInput,
